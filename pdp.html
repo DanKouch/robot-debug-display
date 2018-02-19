@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Debug Dashboard - Power Distribution Panel</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style type="text/css">
+		img#pdp{
+			transform: rotate(90deg);
+			width: 192px;
+			height: 306px;
+			margin-left: -60px;
+			margin-top: 20px;
+			position: absolute;
+		}
+		button.selector{
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background-color: red;
+			border-radius: 10px;
+			border: 0;
+		}
+		button#backButton {
+			width: 30%;
+			background-color: yellow;
+			border: 1px solid black;
+			padding: 0;
+			height: 30px;
+			font-size: 20px;
+		}
+
+		div#infoPanel {
+			height: 250px;
+			width: 115px;
+			background-color: lightgray;
+			border: 1px solid black;
+			margin-left: 340px;
+			padding: 5px;
+			line-height: 0;
+		}
+
+		p.infoSection {
+			margin-top: 30px;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<button id="backButton" onclick="window.location.href='/index.html'">Back</button>
+	<img id="pdp" src="/resources/pdp.png">
+
+	<!-- Top Red -->
+	<button onclick="showStatsForInput(0)" class="selector" style="margin: 50px -60px"></button>
+	<button onclick="showStatsForInput(1)" class="selector" style="margin: 50px -27px"></button>
+	<button onclick="showStatsForInput(2)" class="selector" style="margin: 50px 3px"></button>
+	<button onclick="showStatsForInput(3)" class="selector" style="margin: 50px 33px"></button>
+	<button onclick="showStatsForInput(4)" class="selector" style="margin: 50px 65px"></button>
+	<button onclick="showStatsForInput(5)" class="selector" style="margin: 50px 90px"></button>
+	<button onclick="showStatsForInput(6)" class="selector" style="margin: 50px 115px"></button>
+	<button onclick="showStatsForInput(7)" class="selector" style="margin: 50px 138px"></button>
+	
+	<!-- Bottom Red -->
+	<button onclick="showStatsForInput(8)" class="selector" style="margin: 278px -40px"></button>
+	<button onclick="showStatsForInput(9)" class="selector" style="margin: 278px -7px"></button>
+	<button onclick="showStatsForInput(10)" class="selector" style="margin: 278px 23px"></button>
+	<button onclick="showStatsForInput(11)" class="selector" style="margin: 278px 53px"></button>
+	<button onclick="showStatsForInput(12)" class="selector" style="margin: 278px 80px"></button>
+	<button onclick="showStatsForInput(13)" class="selector" style="margin: 278px 105px"></button>
+	<button onclick="showStatsForInput(14)" class="selector" style="margin: 278px 130px"></button>
+	<button onclick="showStatsForInput(15)" class="selector" style="margin: 278px 153px"></button>
+	
+	<div id="infoPanel">
+		<h3 style="margin-bottom: 30px">Input #
+			<span>3</span>
+		</h3>
+		<p class="infoSection"><b>Voltage:</b></p>
+		<p>12.43
+			<span>v</span>
+		</p>
+		<p class="infoSection"><b>Draw:</b></p>
+		<p>2.04
+			<span>amp</span>
+		</p>
+	</div>
+
+</body>
+</html>

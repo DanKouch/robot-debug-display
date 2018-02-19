@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Debug Dashboard - Sensors</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style type="text/css">
+
+		div#leftDiv {
+			height: 100px;
+			left: 0;
+			top: 0;
+			width: 40%;
+			position: absolute;
+		}
+		div#rightDiv {
+			right: 0;
+			top: 0;
+			height: 320px;
+			width: 58%;
+			position: absolute;
+			padding: 3px;
+			line-height: 0;
+		}
+		button#backButton {
+			width: 100%;
+			background-color: orange;
+			border: 1px solid black;
+			padding: 0;
+			height: 30px;
+			font-size: 20px;
+		}
+
+		div#sensorList {
+			width: 100%;
+			height: 290px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+
+		div.sensorInList {
+			background-color: #d14747;
+			border: 1px solid black;
+			height: 30px;
+			width: 100%;
+			overflow: hidden;
+			padding-left: 10px;
+			line-height: 0;
+		}
+		div.sensorInList.connected {
+			background-color: #57af49;
+		}
+
+		p.infoSection {
+			margin-top: 30px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="leftDiv">
+		<button id="backButton" onclick="window.location.href='/index.html'">Back</button>
+		<div id="sensorList">
+			<div class="sensorInList">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList connected">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList connected">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList connected">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList connected">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList connected">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList connected">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList connected">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList connected">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList connected">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList connected">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList connected">
+				<p>[Sensor Name]</p>
+			</div>
+			<div class="sensorInList connected">
+				<p>[Sensor Name]</p>
+			</div>
+		</div>
+
+	</div>
+	<div id="rightDiv">
+		<h3 style="line-height: 40px">Sensor: 
+			<span>[Sensor Name]</span>
+		</h3>
+		<p style="infoSection"><b>Value: </b></p>
+		<p>28903243.2348</p>
+	</div>
+	
+</body>
+</html>

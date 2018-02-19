@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Debug Dashboard - Power Distribution Panel</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style type="text/css">
+
+		button#backButton {
+			width: 30%;
+			background-color: purple;
+			border: 1px solid black;
+			padding: 0;
+			height: 30px;
+			font-size: 20px;
+		}
+
+		p.infoSection {
+			margin-top: 30px;
+		}
+
+		div#infoPanel {
+			padding: 10px;
+			background-color: lightgrey;
+			border: 1px solid black;
+			margin: 10px;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<button id="backButton" onclick="window.location.href='/index.html'">Back</button>
+
+	<div id="infoPanel">
+		<p class="infoSection"><b>Voltage:</b></p>
+		<p>12.43
+			<span>v</span>
+		</p>
+		<p class="infoSection"><b>Draw:</b></p>
+		<p>2.04
+			<span>amp</span>
+		</p>
+	</div>
+
+</body>
+</html>

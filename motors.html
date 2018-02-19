@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Debug Dashboard - Motors</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style type="text/css">
+
+		div#leftDiv {
+			height: 100px;
+			left: 0;
+			top: 0;
+			width: 40%;
+			position: absolute;
+		}
+		div#rightDiv {
+			right: 0;
+			top: 0;
+			height: 320px;
+			width: 58%;
+			position: absolute;
+			padding: 3px;
+		}
+		button#backButton {
+			width: 100%;
+			background-color: red;
+			border: 1px solid black;
+			padding: 0;
+			height: 30px;
+			font-size: 20px;
+		}
+
+		div#motorList {
+			width: 100%;
+			height: 290px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+
+		div.motorInList {
+			background-color: #d14747;
+			border: 1px solid black;
+			height: 50px;
+			width: 100%;
+			overflow: hidden;
+			padding-left: 10px;
+			line-height: 0;
+		}
+		div.motorInList.connected {
+			background-color: #57af49;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="leftDiv">
+		<button id="backButton" onclick="window.location.href='/index.html'">Back</button>
+		<div id="motorList">
+			<div class="motorInList">
+				<p>ID# <span>92748239847</span></p>
+				<p>Disconnected</p>
+			</div>
+			<div class="motorInList connected">
+				<p>ID# <span>92748239847</span></p>
+				<p>Connected</p>
+			</div>
+			<div class="motorInList">
+				<p>ID# <span>29439283409</span></p>
+				<p>Disconnected</p>
+			</div>
+			<div class="motorInList connected">
+				<p>ID# <span>26397488234</span></p>
+				<p>Connected</p>
+			</div>
+			<div class="motorInList connected">
+				<p>ID# <span>10100922343</span></p>
+				<p>Connected</p>
+			</div>
+			<div class="motorInList">
+				<p>ID# <span>83924892348</span></p>
+				<p>Disconnected</p>
+			</div>
+		</div>
+
+	</div>
+	<div id="rightDiv">
+		<h3>Motor ID# 
+			<span>83924892348</span>
+		</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	
+</body>
+</html>

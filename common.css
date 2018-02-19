@@ -1,0 +1,20 @@
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    user-drag: none; 
+	-webkit-user-drag: none;
+	
+    padding: 0px;
+	margin: 0px;
+	font-family: helvetica;
+	overflow: hidden;
+}
+
+button:focus {
+	outline:0;
+}

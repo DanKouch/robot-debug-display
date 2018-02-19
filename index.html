@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Debug Dashboard</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style type="text/css">
+
+		button.horizontal-option {
+			border: 1px solid black;
+			width: 100%;
+			height: 65px;
+			overflow: hidden;
+			background-color: white;
+			font-size: 30px;
+		}
+		button.horizontal-option:active {
+			background-color: #eee;
+		}
+	</style>
+</head>
+<body>
+	<button style="background-color: red" class="horizontal-option" onclick="window.location.href='/motors.html'"> Motors </button>
+	<button style="background-color: orange" class="horizontal-option" onclick="window.location.href='/sensors.html'"> Sensors </button>
+	<button style="background-color: yellow" class="horizontal-option" onclick="window.location.href='/pdp.html'"> Power Distribution Panel </button>
+	<button style="background-color: green" class="horizontal-option" onclick="window.location.href='/cameras.html'"> Cameras </button>
+	<button style="background-color: purple" class="horizontal-option" onclick="window.location.href='/misc.html'"> Misc. </button>
+</body>
+</html>
